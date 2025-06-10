@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import SearchBar from '../Components/searchBar'
+import SearchBar from '../Components/SearchBar'
 import { Filter, Search } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
