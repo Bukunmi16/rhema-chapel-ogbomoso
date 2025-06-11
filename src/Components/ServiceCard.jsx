@@ -26,11 +26,12 @@ const ServiceCard = ({name, types, weekDay}) => {
     />
     </div>
     <div className='my-[20px] sm:w-[45%]'>
-        <div className='flex hover:shadow px-2 pt-2 justify-between items-center text-[15px] border-b-1 border-gray-300 mb-2 pb-2'><p className='w-[20%]'>Service Day</p> <p className='w-[70%] text-[13px]'>{selectedType && selectedType.specific}</p></div>
-        <div className='flex hover:shadow px-2 pt-2 justify-between items-center text-[15px] border-b-1 border-gray-300 mb-2 pb-2'><p className='w-[20%]'>Service Description</p> <p className='text-[13px] w-[70%] italic'>{selectedType && selectedType.description}</p></div>
-        <div className='flex hover:shadow px-2 pt-2 justify-between items-center text-[15px] border-b-1 border-gray-300 mb-2 pb-2'><p className='w-[20%]'>Time</p> <p className='w-[70%] text-[13px]'>{selectedType && selectedType.time}</p></div>
-    <div className='mt-5'>
-    <Link to={'/join-us'} className={`btn text-white p-1 px-2 rounded bg-[#ff1d0d] hover:scale-[1.1] transition-all duration-300`}>Join Us</Link>
+        <div className='flex hover:shadow px-2 pt-1 justify-between items-center font-bold text-[13px] border-b-1 border-gray-300 mb-2 pb-2'><p className='w-[20%]'>Service Day</p> <p className='w-[70%] text-[13px] font-medium'>{selectedType && selectedType.specific}</p></div>
+        <div className='flex hover:shadow px-2 pt-1 justify-between items-center font-bold text-[13px] border-b-1 border-gray-300 mb-2 pb-2'><p className='w-[20%]'>Service Description</p> <p className='text-[12px] w-[70%] font-medium'>{selectedType && selectedType.description}</p></div>
+        <div className='flex hover:shadow px-2 pt-1 justify-between items-center font-bold text-[13px] border-b-1 border-gray-300 mb-2 pb-2'><p className='w-[20%]'>Time</p> <p className='w-[70%] text-[13px] font-medium'>{selectedType && selectedType.time}</p></div>
+    <div className='mt-5 flex justify-end'>
+    <Link to={'/join-us'} className={`font-bold hover:text-white p-2 bg-[#ff1d0d] transition-all duration-300`}>Join Us</Link>
+    {/* <Link to={'/join-us'} className={`p-0 font-bold text-white hover:text-[#ff1d0d] hover:scale-[1.01] transition-all duration-300`}>Checkout Our {} Teachings</Link> */}
     </div>
     </div>
     </div>

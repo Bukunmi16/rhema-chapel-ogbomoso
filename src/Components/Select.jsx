@@ -1,5 +1,6 @@
 import { div } from 'framer-motion/client'
 import React from 'react'
+import { ChevronDown } from 'lucide-react';
 
 const Select = ({types, setSelectedType}) => {
 
@@ -17,7 +18,9 @@ const Select = ({types, setSelectedType}) => {
                     return(
                         <option key={index} value={types.value}
                         className='text-center border-none'
-                        >{types.name} </option>
+                        >
+                        {types.name} 
+                        </option>
                     )
                 })
             }
