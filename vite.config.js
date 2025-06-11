@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/rhema-chapel-ogbomoso',
+  // base: '/rhema-chapel-ogbomoso',
   plugins: [react(), tailwindcss()],
 })
 
