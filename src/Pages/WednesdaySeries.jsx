@@ -110,7 +110,7 @@ const WednesdaySeries = ({sermons}) => {
                 <Search className='text-white hover:text-[#ff1d0d]'/>
                 </div>
                 {
-                  search && <div onClick={() => setSuggestion(true)} className={`rounded-[15px]  py-3 ${suggestion ? "block" : "hidden"} bg-[#c4170b] w-[400px] max-h-[400px] overflow-y-auto max-w-xl top-12  absolute`}>
+                  search && <div onClick={() => setSuggestion(true)} className={`rounded-[15px]  py-3 ${suggestion ? "block" : "hidden"} bg-[#c4170b] w-[90%] max-h-[400px] overflow-y-auto max-w-xl top-12  absolute`}>
                   {searchElements.length > 0 ? searchElements : 
                   <p className='text-center text-[13px]'>Sorry, we couldn't find your search :(</p>}
                 </div>

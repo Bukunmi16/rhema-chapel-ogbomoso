@@ -112,7 +112,7 @@ const servicesData = [
                 specific: 'Every Sunday',
                 value: 'regular',
                 images: normalImages,
-                description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur facilis quibusdam fuga, quo cupiditate sed eveniet!',
+                description: 'Join us every Sunday for a powerful time of worship, the Word, and fellowship. Our Sunday services are filled with vibrant praise, life-transforming teachings, and the warm presence of God. It’s a time to be refreshed and encouraged for the week ahead.',
                 time: '8:00AM - 11:00AM'
             },
             {
@@ -120,23 +120,23 @@ const servicesData = [
                 specific: 'Last Sunday of every month',
                 value: 'thanksgiving',
                 images: thanksgivingImages,
-                description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur facilis quibusdam fuga, quo cupiditate sed eveniet!',
+                description: "Every last Sunday of the month is dedicated to giving thanks to God for His faithfulness. As a church family, we come together to celebrate victories, birthdays, anniversaries, and the goodness of God in our lives. It's a joyful, vibrant, and colorful service full of praise and gratitude",
                 time: '8:00AM - 11:00AM'
             },
             {
                 name: 'Holy Ghost 🔥',
-                specific: '1st Sunday every 2 months',
+                specific: 'Every 1st Sunday, Bi-monthly',
                 value: 'holyghost',
                 images: holyGhostImages,
-                description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur facilis quibusdam fuga, quo cupiditate sed eveniet!',
+                description: 'On the first Sunday of every two months, we gather for a special Holy Ghost Service — a time where we earnestly expect and experience the supernatural move of God. Come ready for miracles, impartation, and deep encounters with the Holy Spirit.',
                 time: '8:00AM - as the Spirit leads'
             },
             {
                 name: 'Holy Communion 🍞',
-                specific: '1st Sunday every 2 months',
+                specific: 'Every 1st Sunday, Bi-monthly',
                 value: 'communion',
                 images: communionImages,
-                description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur facilis quibusdam fuga, quo cupiditate sed eveniet!',
+                description: 'Also held on the first Sunday of every two months, our Communion Service is a sacred time where we come together to remember and honor the sacrifice of Jesus Christ. In obedience to His command, we break bread and partake of the communion table in unity and reverence.',
                 time: '8:00AM - 11:00AM'
             }
         ]
@@ -150,7 +150,7 @@ const servicesData = [
                 specific: 'Every Wednesday',
                 value: 'teaching',
                 images: wednesdayTeachingImages,
-                description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur facilis quibusdam fuga, quo cupiditate sed eveniet!',
+                description: 'Every Wednesday, Pastor Judah leads us in deep, insightful teachings centered on a monthly theme. These sessions are designed to build spiritual maturity, strengthen your faith, and provide practical biblical wisdom for everyday living.',
                 time: '5:30PM - 7:00PM'
             },
             {
@@ -158,7 +158,7 @@ const servicesData = [
                 specific: 'Every Wednesday in May and October',
                 value: 'interactive',
                 images: wednesdayInteractiveImages,
-                description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur facilis quibusdam fuga, quo cupiditate sed eveniet!',
+                description: 'Our Interactive Bible Study offers a unique and engaging way to grow in the Word. The church is divided into small groups or classes, each guided by a trained facilitator. Together, we explore Scripture, ask questions, and learn from one another in a supportive and interactive environment.',
                 time: '5:30PM - 7:00PM'
             }
         ]
@@ -172,7 +172,7 @@ const servicesData = [
                 specific: 'Every Friday',
                 value: 'prayer',
                 images: prayerFlyer,
-                description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur facilis quibusdam fuga, quo cupiditate sed eveniet!',
+                description: 'Join us every Friday for a powerful session of focused prayers. It’s a time to align with God’s will, intercede for our lives and nation, and push through in the place of prayer.',
                 time: '5:30PM - 7:00PM'
             },
             {
@@ -180,7 +180,7 @@ const servicesData = [
                 specific: 'Last Friday of every month',
                 value: 'allnight',
                 images: allNightPrayerFlyer,
-                description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur facilis quibusdam fuga, quo cupiditate sed eveniet!',
+                description: 'Every last Friday of the month, we gather from 10pm till dawn for a night of intense, Spirit-led prayers. These all-night meetings are times of spiritual refreshing, breakthrough, and alignment with God’s purpose. Come expectant for a divine encounter.',
                 time: '10:00PM - 4:00AM'
             }
         ]
@@ -250,12 +250,12 @@ const departmentData = [
 ]
 
 // MONTHS
-const feb = '/monthlyImages/feb.jpg'
+const february = '/monthlyImages/february.jpg'
 const march = '/monthlyImages/march.jpg'
 const april = '/monthlyImages/april.jpg'
 const june = '/monthlyImages/june.jpg'
 const july = '/monthlyImages/july.jpg'
-const august = '/monthlyImages/august.webp'
+const august = '/monthlyImages/august.jpg'
 const october = '/monthlyImages/october.jpg'
 const september = '/monthlyImages/september.jpg'
 const november = '/monthlyImages/november.jpg'
@@ -264,7 +264,7 @@ const december = '/monthlyImages/december.jpg'
 const months = [
     {
         month: 'February',
-        img: feb
+        img: february
     },
     {
         month: 'March',
@@ -292,7 +292,7 @@ const months = [
     },
     {
         month: 'October',
-        img: ""
+        img: october
     },
     {
         month: 'November',

@@ -3,11 +3,13 @@ import { Link, useParams } from 'react-router-dom'
 import { Youtube, YoutubeIcon } from 'lucide-react'
 import { div } from 'framer-motion/client'
 import Button from '../Components/Button'
+import { ministersData } from '../data'
 
 const SermonInfo = ({sermons}) => {
     const {sermonName} = useParams()
     const sermon = sermons.find((sermon) => sermon.title.toLowerCase() === sermonName)
-    
+    console.log(ministersData.includes((minister) => minister.name.toLowerCase() === sermon.minister.toLowerCase()));
+
   return (
     <div className='md:p-3 md:mt-0 mt-10  flex flex-col md:h-screen items-center '>
     {sermon &&

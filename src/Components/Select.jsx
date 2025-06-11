@@ -24,7 +24,7 @@ const Select = ({types, setSelectedType}) => {
        </select>
         
     <label htmlFor="select mt-2">
-        <p className='text-center'>Select Service</p>
+        {/* <p className='text-center'>Select Service</p> */}
     </label>
      
 

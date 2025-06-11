@@ -61,7 +61,7 @@ useEffect(() => {
                 onClick={handleNext} className={`p-2 bg-[#05042E] text-white absolute top-[50%] right-[-20px] rounded-[50%]  hover:bg-[#ff1d0d] transition-all duration-300`}><ChevronRight/></button>
 
                 {visibleTeachings.map((sermon) => (
-                  <Link to={`/sunday-series/${sermon.title.toLowerCase()}`} key={sermon.id} className='p-4 h-[400px] flex flex-col rounded-lg shadow hover:shadow-2xl transition-shadow duration-300'
+                  <Link to={`/sermon/${sermon.title.toLowerCase()}`} key={sermon.id} className='p-4 h-[400px] flex flex-col rounded-lg shadow hover:shadow-2xl transition-shadow duration-300'
                   style={{ backgroundImage: `url(${sermon.thumbnail})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
                   >
                   </Link>
