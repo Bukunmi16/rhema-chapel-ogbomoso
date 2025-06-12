@@ -59,12 +59,14 @@ const WednesdaySeries = ({sermons}) => {
 
   ] 
 
-  
-
     const searchElements = wednesdayTeachings.filter((sermon) => {
-        const searchedItems = search.toLowerCase() === '' ? sermon : sermon.month.toLowerCase().trim(" ").includes(search)
-        return searchedItems
-      }).map((sermon, index) => {
+      const searchTerm = search.toLowerCase().trim();
+      if (searchTerm === '') return true;
+      return (
+        sermon.month.toLowerCase().trim().includes(searchTerm) ||
+        sermon.title.toLowerCase().trim().includes(searchTerm)
+      );
+    }).map((sermon, index) => {
       return(
         <Link 
         to={`/wednesday-series/${sermon.month}/${sermon.title.toLowerCase()}`}
