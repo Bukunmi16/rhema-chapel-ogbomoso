@@ -22,11 +22,12 @@ const WednesdayTeachingInfo = ({sermons}) => {
             <div className='font-bold md:text-xl  rounded text-center p-2 shadow-2xl  sm:text-left'>{sermon.title}</div>
                 <div className="flex text-[14px] w-full justify-between items-center">
                     <span className='font-bold'>Minister</span>
-                    <span className=''>{sermon.minister}</span>
+                    <Link to={`/ministers/${sermon.minister.toLowerCase()}`} className='hover:border-b border-[#05042E] transition-all duration-300 text-right'>{sermon.minister}</Link>
+                    
                 </div>
                 <div className="flex text-[14px] w-full justify-between items-center">
                     <span className='font-bold '>Series Title</span>
-                    <span className='text-[12px]'>{sermon.seriesTitle}</span>
+                    <span className='text-[12px] text-right'>{sermon.seriesTitle}</span>
                 </div>
                 <div className="flex text-[14px] w-full justify-between items-center">
                     <span className='font-bold'>Date Preached</span>
