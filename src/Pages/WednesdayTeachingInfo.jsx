@@ -25,8 +25,8 @@ const WednesdayTeachingInfo = ({sermons}) => {
                     <span className=''>{sermon.minister}</span>
                 </div>
                 <div className="flex text-[14px] w-full justify-between items-center">
-                    <span className='font-bold'>Series Title</span>
-                    <span className=''>{sermon.seriesTitle}</span>
+                    <span className='font-bold '>Series Title</span>
+                    <span className='text-[12px]'>{sermon.seriesTitle}</span>
                 </div>
                 <div className="flex text-[14px] w-full justify-between items-center">
                     <span className='font-bold'>Date Preached</span>
