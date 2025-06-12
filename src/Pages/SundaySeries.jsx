@@ -26,9 +26,10 @@ const SundaySeries = ({sermons}) => {
   })
 
   const searchElements = sundayTeachings.filter((sermon) => {
-      const searchedItems = search.toLowerCase() === '' ? sermon : sermon.title.toLowerCase().trim(" ").includes(search)
-      return searchedItems
-    }).map((sermon, index) => {
+  const searchTerm = search.toLowerCase().trim();
+  if (searchTerm === '') return true;
+  return sermon.title.toLowerCase().trim().includes(searchTerm);
+}).map((sermon, index) => {
     return(
       <Link to={`/sermon/${sermon.title.toLowerCase()}`} className='flex my-2 gap-2 px-5 hover:bg-[#2d2c4e] cursor-pointer items-center'>
         <img src={sermon.thumbnail ? sermon.thumbnail : null} className='w-7.5' alt="" />
