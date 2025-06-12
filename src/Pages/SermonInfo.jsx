@@ -22,7 +22,10 @@ const SermonInfo = ({sermons}) => {
         <div className='font-bold md:text-xl text-center p-2 shadow  sm:text-left'>{sermon.title}</div>
             <div className="flex text-[14px] w-full justify-between items-center">
                 <span className='font-bold'>Minister</span>
-                <Link to={`/ministers/${sermon.minister.toLowerCase()}`} className='hover:border-b border-[#05042E] transition-all duration-300'>{sermon.minister}</Link>
+                {sermon.minister === 'Pastor Judah Olorunmaiye' || sermon.minister === 'Minister Adedamola Olorunmaiye' || sermon.minister === 'Minister Samuel Kosoko' || sermon.minister === 'Minister Esther Kosoko' || sermon.minister === 'Rev. George Adegboye' ?
+                <Link to={`/ministers/${sermon.minister.toLowerCase()}`} className='hover:border-b border-[#05042E] transition-all duration-300 text-right'>{sermon.minister}</Link>
+                :
+                <div className='hover:border-b border-[#05042E] transition-all duration-300 text-right'>{sermon.minister}</div>}
             </div>
             <div className="flex text-[14px] w-full justify-between items-center">
                 <span className='font-bold'>Date Preached</span>

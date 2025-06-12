@@ -360,7 +360,7 @@ const ourValues = [
 const revGeorgeAdegboye = ['/MinistersPics/rev_georgeadegboye.jpg'] 
 
 const pastorJudah = ['/MinistersPics/pj_2.jpg', '/MinistersPics/pj_1.jpg','/MinistersPics/pj_3.jpg','/MinistersPics/pj_4.jpg','/MinistersPics/pj_5.jpg','/MinistersPics/pj_6.jpg', '/MinistersPics/pj_7.jpg'] 
-const ministerAdedamola = ['/MinistersPics/md_1.jpg', '/MinistersPics/md_2.jpg','/MinistersPics/md_3.jpg','/MinistersPics/md_4.jpg','/MinistersPics/md_5.jpg'] 
+const ministerAdedamola = ['/MinistersPics/md_5.jpg','/MinistersPics/md_2.jpg','/MinistersPics/md_3.jpg','/MinistersPics/md_4.jpg',] 
 const ministerSamuel = ['/MinistersPics/ms_1.jpg', '/MinistersPics/ms_2.jpg','/MinistersPics/ms_3.jpg','/MinistersPics/ms_4.jpg','/MinistersPics/ms_5.jpg','/MinistersPics/ms_6.jpg','/MinistersPics/ms_7.jpg','/MinistersPics/ms_8.jpg','/MinistersPics/ms_9.jpg', '/MinistersPics/ms_10.jpg'] 
 const ministerEsther = ['/MinistersPics/me_1.jpg', '/MinistersPics/me_2.jpg','/MinistersPics/me_3.jpg','/MinistersPics/me_4.jpg'] 
 

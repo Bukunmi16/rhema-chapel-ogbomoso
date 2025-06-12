@@ -24,7 +24,7 @@ const MinisterBiography = ({ministerData}) => {
         <img src={minister.photoUrl[0]} alt="" />
     }
     </div>
-        <div className='md:w-[40%] p-3  flex flex-col justify-between  md:mt-0 shadow-lg'>
+        <div className='md:w-[40%] p-3  flex flex-col justify-between items-center  md:mt-0 shadow-lg'>
         <div>
           <div className='flex justify-between items-start mt-2'><span className='font-bold text-[14px] w-[20%]'>Role</span><span className='text-[13px] w-[70%] text-right'>{minister.role}</span></div>
           <div className='flex justify-between items-start mt-2'><span className='font-bold text-[14px] w-[20%]'>Spouse</span><span className='text-[13px] w-[70%] text-right'>{minister.spouse}</span></div>
@@ -34,8 +34,8 @@ const MinisterBiography = ({ministerData}) => {
           <div className='flex justify-between items-start mt-2'><span className='font-bold text-[14px] w-[20%]'>Education</span><span className='text-[13px] w-[70%] text-right'>{minister.education}</span></div>
           {minister.contact && <div className='flex justify-between items-start mt-2'><span className='font-bold text-[14px] w-[20%]'>Email</span><span className='text-[13px] w-[70%] text-right'>{minister.contact.email}</span></div>}
           <div className='flex flex-col justify-between w-full items-start mt-2'><span className='font-bold text-[14px]'>Biography</span><span className='text-[13px] mt-2'>{minister.biography} </span></div>
-          <Link className='font-bold text-[14px] mt-2' to={`/ministers/${minister.name}/teachings`}>{minister.name}'s Teachings</Link>
         </div>
+          <Link className='underline  text-center w-[70%] font-bold text-[14px] mt-5' to={`/ministers/${minister.name}/teachings`}>{minister.name}'s Teachings</Link>
         <div className='flex py-4 my-4 h-7 justify-center items-center  '>
         {minister.socialMedia.facebook.length > 0 && <a target='_blank' href={minister.socialMedia.facebook}><img src={facebook} className='rounded-full w-7 hover:-translate-y-1 transition-all duration-300 justify-center items-center mr-5' alt="" /></a> }
         {minister.socialMedia.instagram.length > 0 && <a target='_blank' href={minister.socialMedia.instagram}><img src={instagram} className='rounded-full w-7 hover:-translate-y-1 transition-all duration-300 justify-center items-center mr-5' alt="" /></a>}
