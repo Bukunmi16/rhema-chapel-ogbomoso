@@ -4,10 +4,10 @@ import { useParams, Link } from 'react-router-dom'
 
 const WednesdayTeachingInfo = ({sermons}) => {
     const {teachingName} = useParams()
-    console.log(teachingName);
+    // console.log(teachingName);
     
     const sermon = sermons.find((sermon) => sermon.title.toLowerCase() === teachingName)
-    console.log(sermon);
+    // console.log(sermon);
     
 
   return (

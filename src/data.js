@@ -287,10 +287,6 @@ const months = [
         img: august
     },
     {
-        month: 'September',
-        img: september
-    },
-    {
         month: 'October',
         img: october
     },
