@@ -27,16 +27,12 @@ const WednesdayTeachingInfo = ({sermons}) => {
                 </div>
                 <div className="flex text-[14px] w-full justify-between items-center">
                     <span className='font-bold '>Series Title</span>
-                    <span className='text-[12px] text-right'>{sermon.seriesTitle}</span>
+                    <span className='text-[12px] text-right'>{sermon.seriesTitle} ({sermon.seriesNumber})</span>
                 </div>
                 <div className="flex text-[14px] w-full justify-between items-center">
                     <span className='font-bold'>Date Preached</span>
                     <span>{`${sermon.month} ${sermon.day}, ${sermon.year}`}</span>
                 </div>
-                <div className="flex text-[14px] w-full justify-between items-center">
-                                <span className='font-bold'>Number in Series</span>
-                                <span>Teaching {sermon.seriesNumber}</span>
-                            </div>
                 <div className="flex flex-col">
                     <span className='font-bold text-[14px]'>Sermon Description</span>
                     <span className='text-[13px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus numquam, deleniti veniam fugit sunt fuga ad nisi sed minima, quos consequatur provident, cupiditate molestias reprehenderit?</span>
